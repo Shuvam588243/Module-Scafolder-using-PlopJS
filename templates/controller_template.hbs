@@ -1,0 +1,12 @@
+module.exports = {
+    {{ pascalCase name }} : (req,res) => {
+        try{
+            res.status(200).json({
+                message : '{{ pascalCase name }} Controller Created',
+                status : 200,
+            });
+        }catch(error){
+            console.log(error);
+        }
+    }
+}
